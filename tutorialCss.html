@@ -72,6 +72,23 @@ img {
   -webkit-box-reflect: right;
 }
 
+ @keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:100px; top:0px;}
+  50%  {background-color:blue; left:100px; top:100px;}
+  75%  {background-color:green; left:0px; top:100px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+.animacao {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 8s;
+}
+
 
 
 </style>
@@ -212,8 +229,6 @@ img {
 
  <img id = "imagem1"src="assets/Olaf.png"height="400" width="400">
  
-
-
 </body>
 
 </xmp>
@@ -223,5 +238,50 @@ img {
 </div>
 
 <hr>
+
+<!------------------------------------------------------------------------------------------------>
+<H2>Animações CSS</H2>
+
+<p>O código abaixo aplica uma animação permitindo que um elemento mude gradualmente de um estilo para outro.O exemplo a seguir mudará tanto a cor de fundo quanto a posição do elemento.
+Quando a animação estiver 25% completa, 50% completa e novamente quando a animação estiver 100% completa:<p>
+
+<div>
+
+<h4>Exemplo:</h4>
+<xmp>
+<style type="text/css">
+
+ @keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:100px; top:0px;}
+  50%  {background-color:blue; left:100px; top:100px;}
+  75%  {background-color:green; left:0px; top:100px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+.animacao {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 8s;
+}
+ 
+</style>
+
+ <body>
+ <div class="animacao">Animação</div>
+</body>
+
+</xmp>
+
+   <div class="animacao">Animação</div>
+
+</div>
+<br><br><br><br><br>
+<hr>
+<!------------------------------------------------------------------------------------------------>
+
 </body>
 </html>
