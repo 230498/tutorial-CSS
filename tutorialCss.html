@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Tutorial Css</title>
+</head>
+
+<style type="text/css">
+p {
+	font-size: 17px;
+	font-family: cambria, sans-serif;
+	}
+	
+H1 {
+	font-size: 30px;
+	font-family: cambria, sans-serif;
+	}
+	
+H2 {
+	font-size: 18px;
+	font-family: cambria, sans-serif;
+	text-decoration: underline;
+	}
+	
+H3 {
+	font-size: 18px;
+	font-family: cambria, sans-serif;
+	}
+	
+div{
+background-color:Gainsboro;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: Black;
+}
+
+li {
+  float: left;
+  border-right: 1px solid #bbb;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+}
+
+li a:hover {
+  background-color: gray;
+}
+
+#sombra1{
+color: white;
+text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+#sombra2{
+text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+
+#sombra3{
+  text-shadow: 2px 2px yellow;
+}
+
+
+</style>
+
+
+<body>
+
+<H1>Tutorial CSS</H1>
+
+<H3> Conceito:</H3>
+<P>O CSS Trata-se de uma linguagem de marcação, amplamente utilizada com HTML, e representa diversas possibilidades para a formatação.Essa linguagem ajuda a editar, alinhar, remover e 
+trabalhar no espaço entre elementos de uma página.</P>
+
+
+<H3>Exemplos de Uso CSS:</H3>
+<br>
+
+<H2>Barras de Navegação Horizontal</H2>
+
+<p>O código abaixo, criará uma barra de navegação fácil de ser utilizada e com um designer diferenciado(Com remoção de Quebras de linhas,elementos flutuantes um ao lado do outro, 
+especificação de preenchimento,divisores de link, alteração da cor do link ao selecionar e definição da cor de fundo do menu).</p>
+
+<div>
+
+<h4>Exemplo:</h4>
+<xmp>
+<style type="text/css">
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: SlateGray;
+}
+
+li {
+  float: left;
+  border-right: 1px solid #bbb;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+</style>
+
+<body>
+<ul>
+  <li><a href="#home">Início</a></li>
+  <li><a href="#news">Notícias</a></li>
+  <li><a href="#contact">Contatos</a></li>
+</ul>
+</body>
+
+</xmp>
+
+<ul>
+  <li><a href="#home">Início</a></li>
+  <li><a href="#news">Notícias</a></li>
+  <li><a href="#contact">Contatos</a></li>
+</ul>
+
+</div>
+
+<hr>
+
+<!-- --------------------------------------------------------------------------------------------- -->
+<H2>Efeito Sombra CSS (Textos)</H2>
+
+<p>O código abaixo,adiciona sombra aos textos.(Adicionar mais de uma sombra,adicionar uma cor á sombra e sombra com brilho neon)</p>
+
+<div>
+
+<h4>Exemplos:</h4>
+<xmp>
+<style type="text/css">
+
+h1 {
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+
+h1 {
+  text-shadow: 0 0 3px #FF0000;
+}
+
+
+h1 {
+  text-shadow: 2px 2px yellow;
+}
+
+</style>
+
+<body>
+<h1 id="sombra1">TEXTO COM SOMBRA</h1>
+
+</body>
+
+</xmp>
+
+<h1 id="sombra1">TEXTO COM SOMBRA</h1>
+<h1 id="sombra2">TEXTO COM SOMBRA</h1>
+<h1 id="sombra3">TEXTO COM SOMBRA</h1>
+
+</div>
+
+<hr>
+</body>
+</html>
