@@ -68,6 +68,11 @@ text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
   text-shadow: 2px 2px yellow;
 }
 
+img {
+  -webkit-box-reflect: right;
+}
+
+
 
 </style>
 
@@ -179,6 +184,41 @@ h1 {
 <h1 id="sombra1">TEXTO COM SOMBRA</h1>
 <h1 id="sombra2">TEXTO COM SOMBRA</h1>
 <h1 id="sombra3">TEXTO COM SOMBRA</h1>
+
+</div>
+
+<hr>
+<!-- --------------------------------------------------------------------------------------------- -->
+<H2>Reflexão de Imagem CSS</H2>
+
+<p>O código abaixo,possibilita a reflexão de uma imagem</p>
+<p>-webkit-box-reflect: below;(Reflexão Abaixo da Imagem)</p>
+<p>-webkit-box-reflect: right;(Reflexão a direita da Imagem)</p>
+<p>-webkit-box-reflect: below;(Efeito Transparente do Reflexo)</p>
+
+<div>
+
+<h4>Exemplo:</h4>
+<xmp>
+<style type="text/css">
+
+img {
+  -webkit-box-reflect: right;
+}
+
+</style>
+
+<body>
+
+ <img id = "imagem1"src="assets/Olaf.png"height="400" width="400">
+ 
+
+
+</body>
+
+</xmp>
+
+ <img src="assets/Olaf.png"height="400" width="400">
 
 </div>
 
