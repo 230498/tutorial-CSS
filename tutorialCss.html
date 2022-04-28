@@ -68,7 +68,7 @@ text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
   text-shadow: 2px 2px yellow;
 }
 
-img {
+.olaf {
   -webkit-box-reflect: right;
 }
 
@@ -104,6 +104,21 @@ img {
   height: 100px;
   background-image: linear-gradient(180deg, red, yellow);
 }
+
+.imagem1{
+ border-radius: 8px;
+}
+.imagem2{
+  border-radius: 50%;
+}
+
+.imagem3{
+  filter: grayscale(100%);
+}
+.imagem4{
+  opacity: 0.5;
+}
+
 
 
 
@@ -235,21 +250,20 @@ h1 {
 <xmp>
 <style type="text/css">
 
-img {
+.olaf {
   -webkit-box-reflect: right;
 }
-
 </style>
 
 <body>
 
- <img id = "imagem1"src="assets/Olaf.png"height="400" width="400">
+ <img class= "olaf"src="assets/Olaf.png"height="400" width="400">
  
 </body>
 
 </xmp>
 
- <img src="assets/Olaf.png"height="400" width="400">
+ <img class= "olaf"src="assets/Olaf.png"height="400" width="400">
 
 </div>
 
@@ -341,7 +355,49 @@ o efeito de gradiente.<p>
    <div class="gradiente3">Este exemplo mostra como usar ângulos em gradientes lineares</div>
 
 </div>
-<br><br><br><br><br>
+
+<hr>
+<!------------------------------------------------------------------------------------------------>
+<H2>Imagens de Estilo CSS</H2>
+
+<p>O código abaixo permite estilizarmos imagens(Arredondamento das bordas,imagem circulada,aplicação de filtros e opacidade)respectivamente.<p>
+
+<div>
+
+<h4>Exemplo:</h4>
+<xmp>
+<style type="text/css">
+
+.imagem1{
+ border-radius: 8px;
+}
+.imagem2{
+  border-radius: 50%;
+}
+.imagem3{
+  filter: grayscale(100%);
+}
+.imagem4{
+  opacity: 0.5;
+}
+
+</style>
+
+ <body>
+  <img class="imagem1"src="assets/paisagem.jpg"height="200" width="200">
+  <img class="imagem2"src="assets/paisagem.jpg"height="200" width="200"><br>
+  <img class="imagem3"src="assets/paisagem.jpg"height="200" width="200"><br>
+  <img class="imagem4"src="assets/paisagem.jpg"height="200" width="200">
+</body>
+
+</xmp>
+
+  <img class="imagem1"src="assets/paisagem.jpg"height="200" width="200">
+  <img class="imagem2"src="assets/paisagem.jpg"height="200" width="200">
+  <img class="imagem3"src="assets/paisagem.jpg"height="200" width="200">
+  <img class="imagem4"src="assets/paisagem.jpg"height="200" width="200">
+  
+  
 <hr>
 </body>
 </html>
