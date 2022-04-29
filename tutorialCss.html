@@ -119,7 +119,32 @@ text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
   opacity: 0.5;
 }
 
+table {
+width:400px;
+border-collapse:separate; /*collapse*/
+background: #808080;
+	
+}
 
+th, td{	
+	padding: 5px;
+}
+
+th{
+	text-transform: uppercase;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black; 
+	text-align: left;
+	font-size: 90%;
+}
+
+tr.alternado{
+	background-color:#DCDCDC;
+}
+
+tr:hover{
+background-color:#98FB98; 
+}
 
 
 </style>
@@ -385,8 +410,8 @@ o efeito de gradiente.<p>
 
  <body>
   <img class="imagem1"src="assets/paisagem.jpg"height="200" width="200">
-  <img class="imagem2"src="assets/paisagem.jpg"height="200" width="200"><br>
-  <img class="imagem3"src="assets/paisagem.jpg"height="200" width="200"><br>
+  <img class="imagem2"src="assets/paisagem.jpg"height="200" width="200">
+  <img class="imagem3"src="assets/paisagem.jpg"height="200" width="200">
   <img class="imagem4"src="assets/paisagem.jpg"height="200" width="200">
 </body>
 
@@ -398,6 +423,79 @@ o efeito de gradiente.<p>
   <img class="imagem4"src="assets/paisagem.jpg"height="200" width="200">
   
   
+<hr>
+
+<!------------------------------------------------------------------------------------------------>
+
+<H2>Estilizando Tabelas</H2>
+
+<p>Com o Código abaixo, este nos permite estilizarmos uma tabela, adicionar cores nas bordas, alternação de cores nas linhas da tabela,efeito hover(Ao passar o mouse).<p>
+
+<div>
+
+<h4>Exemplo:</h4>
+<xmp>
+
+<style type="text/css">
+
+table {
+width:400px;
+border-collapse:separate; /*collapse*/
+background: #808080;	
+}
+
+th, td{	
+padding: 5px;
+}
+
+th{
+text-transform: uppercase;
+border-top: 1px solid black;
+border-bottom: 1px solid black; 
+text-align: left;
+font-size: 90%;
+}
+
+tr.alternado{
+background-color:#DCDCDC;
+}
+
+tr:hover{
+background-color:#98FB98; 
+}
+
+</style>
+
+</xmp>
+
+<table>
+		<tr>
+			<th>Codigo</th>
+			<th>Produto</th>
+			<th class="numero">Preço</th>
+		</tr>
+
+		<tr>
+			<td>001</td>
+			<td>Notebook</td>
+			<td class="numero">2.500</td>
+		</tr>
+			<tr class="alternado">
+			<td>002</td>
+			<td>Tablet</td>
+			<td class="numero">1.500</td>
+		</tr>
+		<tr>
+			<td>003</td>
+			<td>Iphone</td>
+			<td class="numero">3.500</td>
+		</tr>
+		<tr class="alternado">
+			<td >004</td>
+			<td>Nexus</td>
+			<td class="numero">3.500</td>
+		</tr>
+   
 <hr>
 </body>
 </html>
